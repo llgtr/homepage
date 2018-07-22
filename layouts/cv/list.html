@@ -1,0 +1,91 @@
+{{ define "main" }}
+
+{{ $cv := .Site.Data.cv }}
+
+<div class="flex centered">
+  <div class="content-container">
+    <div class="cv-heading--emphasis">
+      {{ $cv.basics.name }}
+    </div>
+    <div class="cv-heading--light">
+      {{ $cv.basics.label }}
+    </div>
+    <br/>
+    <div class="cv-text--summary">
+      {{ $cv.basics.summary }}
+    </div>
+    <br/>
+    <div class="cv-heading--light cv-heading--large">
+      Employment
+    </div>
+    <ul class="cv-list">
+      {{ range $cv.work }}
+      <li>
+        <div class="cv-list-heading--primary">
+          {{ .position }}
+        </div>
+        <div class="cv-list-heading--secondary">
+          {{ .name }}
+        </div>
+        <div class="cv-list-heading--tertiary">
+          {{ .startDate }}
+          -
+          {{ .endDate }}
+        </div>
+        <div class="cv-list-description">
+          {{ .summary }}
+          <ul>
+            {{ range .list }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+    <div class="cv-heading--light cv-heading--large">
+      Education
+    </div>
+    <ul class="cv-list">
+      {{ range $cv.education }}
+      <li>
+        <div class="cv-list-heading--primary">
+          {{ .studyType }}, {{ .area }}
+        </div>
+        <div class="cv-list-heading--secondary">
+          {{ .institution }}
+        </div>
+        <div class="cv-list-heading--tertiary">
+          {{ .startDate }}
+          -
+          {{ .endDate }}
+        </div>
+        <div class="cv-list-description">
+          {{ .summary }}
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+    <div class="cv-heading--light cv-heading--large">
+      Expertise
+    </div>
+    <ul class="cv-list">
+      {{ range $cv.skills }}
+      <li>
+        <div class="cv-list-heading--primary">
+          {{ .name }}
+        </div>
+        <div class="cv-list-description">
+          {{ .description }}
+        </div>
+        <!-- <ul>
+          {{ range .keywords }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+      </li> -->
+      {{ end }}
+    </ul>
+</div>
+
+{{ end }}

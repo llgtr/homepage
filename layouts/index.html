@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<div class="flex col centered">
+  <div class="emphasis-text">
+    Hi!
+  </div>
+  <div class="content-container">
+    {{ .Content }}
+  </div>
+  {{ partial "contacts.html" . }}
+</div>
+
+{{ end }}

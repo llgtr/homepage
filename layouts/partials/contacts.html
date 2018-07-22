@@ -1,0 +1,10 @@
+<div class="contact-container">
+  {{ "<!-- Icons from feathericons.com -->" | safeHTML }}
+  {{ range .Site.Params.contact }}
+  <a href="{{ .link }}">
+    <svg class="contact-icon">
+      <use xlink:href="{{ .Page.Site.BaseUrl }}/icons/feather-sprite.svg#{{ .iconId }}"></use>
+    </svg>
+  </a>
+  {{ end }}
+</div>

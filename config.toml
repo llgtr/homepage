@@ -1,0 +1,41 @@
+baseURL = "https://www.llgtr.com"
+languageCode = "en-us"
+title = "llgtr"
+
+enableEmoji = true
+disableFastRender = true
+pygmentsUseClasses = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
+ignoreFiles = []
+
+[menu]
+  [[menu.main]]
+    name = "notes"
+    url = "/notes/"
+  [[menu.main]]
+    name = "photos"
+    url = "/photos/"
+  [[menu.main]]
+    name = "about"
+    url = "/"
+  [[menu.main]]
+    name = "cv"
+    url = "/cv/"
+
+[params]
+  footer = "Built with Hugo"
+
+  [[params.contact]]
+  name = "email"
+  link = "mailto://placeholder"
+  iconId = "mail"
+
+  [[params.contact]]
+  name = "github"
+  link = "https://github.com/llgtr"
+  iconId = "github"
+
+  [[params.contact]]
+  name = "linkedin"
+  link = "https://www.linkedin.com/in/kevsi"
+  iconId = "linkedin"

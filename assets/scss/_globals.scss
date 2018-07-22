@@ -1,0 +1,41 @@
+/* Colors */
+
+$color-main: #83adad;
+$color-70-black: #4d4d4d;
+$color-30-black: #b3b3b3;
+$color-10-black: #e6e6e6;
+$color-98-white: #fafafa;
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Fira Sans';
+    font-display: swap;
+    src: url(/fonts/FiraSans-Light.woff2);
+}
+
+@font-face {
+  font-family: 'Iosevka Term';
+  font-display: swap;
+  src: url(/fonts/iosevka-custom-regular.woff2);
+}
+
+$font-main: 'Fira Sans', sans-serif;
+$font-code: 'Iosevka Term', monospace;
+
+/* Mixins */
+
+$mobile-width: 720px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+/* Variables */
+
+$desktop-content-width: 640px;
+$mobile-content-width: 80%;
+
+$footer-height: 50px;

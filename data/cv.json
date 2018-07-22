@@ -1,0 +1,50 @@
+{
+  "basics": {
+    "name": "Kevin Sidarous",
+    "label": "Software Engineer",
+    "summary": "Software Engineer from Finland."
+  },
+  "work": [
+    {
+      "name": "Reaktor",
+      "position": "Software Developer",
+      "startDate": "2018/05",
+      "endDate": "",
+      "summary": "",
+      "list": []
+    },
+    {
+      "name": "Sievo",
+      "position": "Junior Software Engineer",
+      "startDate": "2017/05",
+      "endDate": "2018/05",
+      "summary": "",
+      "list": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Aalto University",
+      "area": "Computer Science",
+      "studyType": "Master of Science (Technology)",
+      "startDate": "2015",
+      "endDate": "",
+      "summary": "Major in Big Data and Large-Scale Computing"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming languages",
+      "description": "Worked with a variety of languages along the years including C/C++, Python, Rust, Clojure/ClojureScript, Kotlin, Scala, TypeScript, Bash and more."
+    },
+    {
+      "name": "Technologies",
+      "description": "Worked across the stack with things like: React, Angular, Flutter, Node.js, SQL (PostegreSQL), Docker, AWS, GCP"
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": ""
+  }
+}

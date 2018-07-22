@@ -1,0 +1,299 @@
+@import 'globals';
+
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  width: 100%;
+  height: 100%;
+
+  font-family: $font-main;
+  font-size: 20px;
+  line-height: 1.4;
+
+  color: $color-70-black;
+  background: $color-98-white;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+main {
+  padding-bottom: $footer-height;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.centered {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Links */
+a {
+  color: $color-70-black;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-main;
+  }
+}
+
+p > a, li > a {
+  color: $color-main;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Code blocks */
+code {
+  background-color: $color-10-black;
+  border: 2px solid $color-10-black;
+  border-radius: 2px;
+
+  font-family: $font-code;
+}
+
+p > code {
+  padding: 0 4px 0 4px;
+}
+
+pre {
+  background-color: $color-10-black;
+  border: 2px solid $color-10-black;
+  border-radius: 2px;
+
+  padding: 0 4px 0 4px;
+
+  overflow-x: auto;
+}
+
+.chroma .c, .ch, .cm, .c1, .cs, .cp, .cpf {
+  opacity: 0.6;
+}
+
+/*
+.chroma .k, .kc, .kd, .kn, .kr, .nc, .ni, .ne, .nn, .nt, .ow, .gh, .gp, .gs, .gu {
+  font-weight: bold
+}
+*/
+
+table {
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+
+  th, td {
+    border: 1px solid $color-10-black;
+    padding: 10px;
+  }
+
+  tr:first-child th {
+    border-top: 0;
+  }
+
+  tr:last-child td {
+    border-bottom: 0;
+  }
+
+  tr td:first-child,
+  tr th:first-child {
+    border-left: 0;
+  }
+
+  tr td:last-child,
+  tr th:last-child {
+    border-right: 0;
+  }
+}
+
+/* Header */
+.nav {
+  margin: auto;
+  padding: 60px 0 60px 0;
+  width: $desktop-content-width;
+
+  @include mobile {
+    padding: 20px 0 20px 0;
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-70-black;
+
+    margin: 0 40px 0 40px;
+
+    @include mobile {
+      margin: 0 20px 0 20px;
+    }
+
+    &:hover, &.active {
+      color: $color-main;
+    }
+  }
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+
+  text-align: center;
+
+  font-size: 0.7em;
+
+  color: $color-30-black;
+}
+
+/* Contacts */
+.contact-container {
+  padding: 60px 0 60px 0;
+
+  @include mobile {
+    padding: 40px 0 40px 0;
+  }
+
+  & > a {
+    margin: 0 40px 0 40px;
+
+    @include mobile {
+      margin: 0 20px 0 20px;
+    }
+  }
+
+  .contact-icon {
+    width: 36px;
+    height: 36px;
+    stroke: $color-70-black;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+
+    &:hover {
+      stroke: $color-main;
+    }
+  }
+}
+
+.container {
+  min-height: 100%;
+  position: relative;
+}
+
+.content-container {
+  width: $desktop-content-width;
+
+  @include mobile {
+    width: $mobile-content-width;
+  }
+
+  & > p {
+    text-align: justify;
+
+    & > img {
+      width: 100%;
+    }
+  }
+
+  & > figure {
+    margin: 0;
+
+    & > img {
+      width: 100%;
+    }
+  }
+}
+
+.padded-container {
+    padding: 0 20%;
+}
+
+.emphasis-text {
+  font-size: 4em;
+  color: $color-main;
+}
+
+.single-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.single-time {
+  font-size: 0.8em;
+  color: $color-30-black;
+}
+
+/* List */
+.list-title {
+  font-size: 1.3em;
+}
+
+.minutes {
+  color: $color-30-black;
+}
+
+.post-entry {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* CV */
+.cv {
+  &-heading--emphasis {
+    font-size: 2em;
+    color: $color-main;
+  }
+
+  &-heading--light {
+    color: $color-30-black;
+  }
+
+  &-heading--large {
+    font-size: 1.2em;
+  }
+
+  &-text--summary {
+    text-align: justify;
+  }
+
+  &-list {
+    border-left: 2px solid $color-10-black;
+    list-style: none;
+    padding-left: 20px;
+    margin-left: 20px;
+
+    & > li {
+      margin-bottom: 40px;
+      text-align: justify;
+    }
+
+    &-heading--primary {
+      font-weight: bold;
+    }
+
+    &-heading--secondary {
+      color: $color-main;
+    }
+
+    &-heading--tertiary {
+      color: $color-30-black;
+    }
+  }
+}

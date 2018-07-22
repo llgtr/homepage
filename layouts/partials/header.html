@@ -1,0 +1,15 @@
+<nav class="flex row centered nav">
+  {{ $page := . }}
+  {{ range .Site.Menus.main }}
+    {{ $is := $page.IsMenuCurrent "main" . }}
+    {{ $has := $page.HasMenuCurrent "main" . }}
+    {{ $isNotes := (and (eq .Name "notes") (eq $page.Section "notes")) }}
+    <a
+      class="{{ if or $is $has $isNotes }}active{{ end }}"
+      href="{{ .URL }}"
+      title="{{ .Title }}"
+    >
+      {{ .Name }}
+    </a>
+  {{ end }}
+</nav>
