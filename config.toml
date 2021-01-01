@@ -23,7 +23,7 @@ ignoreFiles = []
     url = "/cv/"
 
 [params]
-  footer = "Built with Hugo"
+  footer = "Built with Hugo. Thanks for stopping by!"
 
   [[params.contact]]
   name = "email"
