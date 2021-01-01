@@ -1,0 +1,12 @@
+#+TITLE: Norway 2020
+#+DRAFT: true
+#+AMOUNT: 3
+#+WEIGHT: 50
+
+{{<img img_01 "alt text">}}
+  Caption 01
+{{</img>}}
+
+{{<img img_02 "alt text 02">}}
+  Caption 02
+{{</img>}}
