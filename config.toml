@@ -39,3 +39,10 @@ ignoreFiles = []
   name = "linkedin"
   link = "https://www.linkedin.com/in/kevsi"
   iconId = "linkedin"
+
+[imaging]
+resampleFilter = "lanczos"
+quality = 90
+
+[imaging.exif]
+excludeFields = ".*"
