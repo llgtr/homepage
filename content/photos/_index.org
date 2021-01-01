@@ -1,5 +1,6 @@
 #+HUGO_BASE_DIR: ../
 #+HUGO_SERCTION: ./
+#+TITLE: photos
 
   - [[https://www.google.com][Collection01]]
   - [[https://www.google.com][Collection02]]
