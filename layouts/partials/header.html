@@ -3,9 +3,9 @@
   {{ range .Site.Menus.main }}
     {{ $is := $page.IsMenuCurrent "main" . }}
     {{ $has := $page.HasMenuCurrent "main" . }}
-    {{ $isNotes := (and (eq .Name "notes") (eq $page.Section "notes")) }}
+    {{ $isNotesOrPhotos := (or (and (eq .Name "notes") (eq $page.Section "notes")) (and (eq .Name "photos") (eq $page.Section "photos"))) }}
     <a
-      class="{{ if or $is $has $isNotes }}active{{ end }}"
+      class="{{ if or $is $has $isNotesOrPhotos }}active{{ end }}"
       href="{{ .URL }}"
       title="{{ .Title }}"
     >
