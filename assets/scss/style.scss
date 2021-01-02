@@ -217,10 +217,11 @@ p {
 }
 
 .content-container {
-  width: $desktop-content-width;
+  max-width: $desktop-content-width;
+  margin: 0 10%;
 
   @include mobile {
-    width: $mobile-content-width;
+    max-width: $mobile-content-width;
   }
 }
 
