@@ -133,22 +133,22 @@ figure {
 /* Header */
 .nav {
   margin: auto;
-  padding: 60px 0 60px 0;
   width: $desktop-content-width;
+  padding: 60px 0;
 
   @include mobile {
-    padding: 20px 0 20px 0;
     width: 100%;
+    padding: 20px 0;
   }
 
   a {
     text-decoration: none;
     color: $color-70-black;
 
-    margin: 0 40px 0 40px;
+    margin: 0 40px;
 
     @include mobile {
-      margin: 0 20px 0 20px;
+      margin: 0 20px;
     }
 
     &:hover, &.active {
@@ -173,17 +173,17 @@ figure {
 
 /* Contacts */
 .contact-container {
-  padding: 60px 0 60px 0;
+  padding: 60px 0;
 
   @include mobile {
-    padding: 40px 0 40px 0;
+    padding: 40px 0;
   }
 
   & > a {
-    margin: 0 40px 0 40px;
+    margin: 0 40px;
 
     @include mobile {
-      margin: 0 20px 0 20px;
+      margin: 0 20px;
     }
   }
 
