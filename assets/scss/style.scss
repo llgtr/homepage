@@ -222,22 +222,6 @@ p {
   @include mobile {
     width: $mobile-content-width;
   }
-
-  & > p {
-    text-align: justify;
-
-    & > img {
-      width: 100%;
-    }
-  }
-
-  & > figure {
-    margin: 0;
-
-    & > img {
-      width: 100%;
-    }
-  }
 }
 
 .padded-container {
