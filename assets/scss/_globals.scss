@@ -11,13 +11,13 @@ $color-98-white: #fafafa;
 @font-face {
     font-family: 'Fira Sans';
     font-display: swap;
-    src: url(/fonts/FiraSans-Light.woff2);
+    src: url('/fonts/FiraSans-Light.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Iosevka Term';
   font-display: swap;
-  src: url(/fonts/iosevka-custom-regular.woff2);
+  src: url('/fonts/iosevka-custom-regular.woff2') format('woff2');
 }
 
 $font-main: 'Fira Sans', sans-serif;
