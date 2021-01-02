@@ -166,7 +166,7 @@ figure {
 
   text-align: center;
 
-  font-size: 0.7em;
+  font-size: 14px;
 
   color: $color-30-black;
 }
@@ -236,23 +236,23 @@ figure {
 }
 
 .emphasis-text {
-  font-size: 4em;
+  font-size: 80px;
   color: $color-main;
 }
 
 .single-title {
-  font-size: 1.5em;
+  font-size: 30px;
   font-weight: bold;
 }
 
 .single-time {
-  font-size: 0.8em;
+  font-size: 14px;
   color: $color-30-black;
 }
 
 /* List */
 .list-title {
-  font-size: 1.3em;
+  font-size: 26px;
 }
 
 .minutes {
@@ -267,7 +267,7 @@ figure {
 /* CV */
 .cv {
   &-heading--emphasis {
-    font-size: 2em;
+    font-size: 40px;
     color: $color-main;
   }
 
@@ -276,7 +276,7 @@ figure {
   }
 
   &-heading--large {
-    font-size: 1.2em;
+    font-size: 24px;
   }
 
   &-text--summary {
