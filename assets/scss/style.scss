@@ -11,8 +11,8 @@ html, body {
   font-size: 20px;
   line-height: 1.4;
 
-  color: $color-70-black;
-  background: $color-98-white;
+  color: $color-80-black;
+  background: #ffffff;
 }
 
 body {
@@ -42,11 +42,15 @@ main {
 
 /* Links */
 a {
-  color: $color-70-black;
+  color: $color-80-black;
   text-decoration: none;
 
   &:hover {
     color: $color-main;
+  }
+
+  &:active {
+    color: $color-main-dark;
   }
 }
 
@@ -152,7 +156,7 @@ p {
 
   a {
     text-decoration: none;
-    color: $color-70-black;
+    color: $color-80-black;
 
     margin: 0 40px;
 
@@ -162,6 +166,10 @@ p {
 
     &:hover, &.active {
       color: $color-main;
+    }
+
+    &:active {
+      color: $color-main-dark;
     }
   }
 }
@@ -177,7 +185,7 @@ p {
 
   font-size: 14px;
 
-  color: $color-30-black;
+  color: $color-55-black;
 }
 
 /* Contacts */
@@ -199,7 +207,7 @@ p {
   .contact-icon {
     width: 36px;
     height: 36px;
-    stroke: $color-70-black;
+    stroke: $color-80-black;
     stroke-width: 1;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -241,7 +249,7 @@ p {
 
 .single-time {
   font-size: 14px;
-  color: $color-30-black;
+  color: $color-55-black;
 }
 
 /* List */
@@ -250,7 +258,7 @@ p {
 }
 
 .minutes {
-  color: $color-30-black;
+  color: $color-55-black;
 }
 
 .post-entry {
@@ -266,7 +274,7 @@ p {
   }
 
   &-heading--light {
-    color: $color-30-black;
+    color: $color-55-black;
   }
 
   &-heading--large {
@@ -297,7 +305,7 @@ p {
     }
 
     &-heading--tertiary {
-      color: $color-30-black;
+      color: $color-55-black;
     }
   }
 }
