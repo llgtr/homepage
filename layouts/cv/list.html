@@ -4,34 +4,32 @@
 
 <div class="flex centered">
   <div class="content-container">
-    <div class="cv-heading--emphasis">
+    <h2 class="cv-heading--emphasis">
       {{ $cv.basics.name }}
-    </div>
-    <div class="cv-heading--light">
+    </h2>
+    <h4 class="cv-heading--light">
       {{ $cv.basics.label }}
-    </div>
-    <br/>
-    <div class="cv-text--summary">
+    </h4>
+    <p class="cv-text--summary">
       {{ $cv.basics.summary }}
-    </div>
-    <br/>
-    <div class="cv-heading--light cv-heading--large">
+    </p>
+    <h3 class="cv-heading--light cv-heading--large">
       Employment
-    </div>
+    </h3>
     <ul class="cv-list">
       {{ range $cv.work }}
       <li>
-        <div class="cv-list-heading--primary">
+        <h4 class="cv-list-heading--primary">
           {{ .position }}
-        </div>
-        <div class="cv-list-heading--secondary">
+        </h4>
+        <h4 class="cv-list-heading--secondary">
           {{ .name }}
-        </div>
-        <div class="cv-list-heading--tertiary">
+        </h4>
+        <h4 class="cv-list-heading--tertiary">
           {{ .startDate }}
           -
           {{ .endDate }}
-        </div>
+        </h4>
         <div class="cv-list-description">
           {{ .summary }}
           <ul>
@@ -43,38 +41,38 @@
       </li>
       {{ end }}
     </ul>
-    <div class="cv-heading--light cv-heading--large">
+    <h3 class="cv-heading--light cv-heading--large">
       Education
-    </div>
+    </h3>
     <ul class="cv-list">
       {{ range $cv.education }}
       <li>
-        <div class="cv-list-heading--primary">
+        <h4 class="cv-list-heading--primary">
           {{ .studyType }}, {{ .area }}
-        </div>
-        <div class="cv-list-heading--secondary">
+        </h4>
+        <h4 class="cv-list-heading--secondary">
           {{ .institution }}
-        </div>
-        <div class="cv-list-heading--tertiary">
+        </h4>
+        <h4 class="cv-list-heading--tertiary">
           {{ .startDate }}
           -
           {{ .endDate }}
-        </div>
+        </h4>
         <div class="cv-list-description">
           {{ .summary }}
         </div>
       </li>
       {{ end }}
     </ul>
-    <div class="cv-heading--light cv-heading--large">
+    <h3 class="cv-heading--light cv-heading--large">
       Expertise
-    </div>
+    </h3>
     <ul class="cv-list">
       {{ range $cv.skills }}
       <li>
-        <div class="cv-list-heading--primary">
+        <h4 class="cv-list-heading--primary">
           {{ .name }}
-        </div>
+        </h4>
         <div class="cv-list-description">
           {{ .description }}
         </div>
