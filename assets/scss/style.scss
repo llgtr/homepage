@@ -190,11 +190,12 @@ p {
   width: 100%;
   height: $footer-height;
 
-  text-align: center;
-
-  font-size: 14px;
-
   color: $color-55-black;
+
+  & > p {
+    font-size: 14px;
+    text-align: center;
+  }
 }
 
 /* Contacts */
