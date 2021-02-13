@@ -320,6 +320,10 @@ p {
 
     &-description {
       margin: 0;
+
+      &-item {
+        list-style-image: url("/icons/chevron-right.svg");
+      }
     }
   }
 }

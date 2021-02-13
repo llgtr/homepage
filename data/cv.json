@@ -35,11 +35,13 @@
   "skills": [
     {
       "name": "Programming languages",
-      "description": "Worked with a variety of languages along the years including C/C++, Python, Rust, Clojure/ClojureScript, Kotlin, Scala, TypeScript, Bash and more."
+      "description": "Worked with a variety of languages along the years including C/C++, Python, Rust, Clojure/ClojureScript, Kotlin, Scala, TypeScript, Bash and more.",
+      "keywords": []
     },
     {
       "name": "Technologies",
-      "description": "Worked across the stack with things like: React, Angular, Flutter, Node.js, SQL (PostegreSQL), Docker, AWS, GCP"
+      "description": "Worked across the stack with things like: React, Angular, Flutter, Node.js, SQL (PostegreSQL), Docker, AWS, GCP",
+      "keywords": []
     }
   ],
   "meta": {
