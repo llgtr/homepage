@@ -30,14 +30,14 @@
           -
           {{ .endDate }}
         </h4>
-        <div class="cv-list-description">
+        <p class="cv-list-description">
           {{ .summary }}
-          <ul>
-            {{ range .list }}
+        </p>
+        <ul>
+          {{ range .list }}
             <li>{{ . }}</li>
-            {{ end }}
-          </ul>
-        </div>
+          {{ end }}
+        </ul>
       </li>
       {{ end }}
     </ul>
@@ -46,22 +46,22 @@
     </h3>
     <ul class="cv-list">
       {{ range $cv.education }}
-      <li>
-        <h4 class="cv-list-heading--primary">
-          {{ .studyType }}, {{ .area }}
-        </h4>
-        <h4 class="cv-list-heading--secondary">
-          {{ .institution }}
-        </h4>
-        <h4 class="cv-list-heading--tertiary">
-          {{ .startDate }}
-          -
-          {{ .endDate }}
-        </h4>
-        <div class="cv-list-description">
-          {{ .summary }}
-        </div>
-      </li>
+        <li>
+          <h4 class="cv-list-heading--primary">
+            {{ .studyType }}, {{ .area }}
+          </h4>
+          <h4 class="cv-list-heading--secondary">
+            {{ .institution }}
+          </h4>
+          <h4 class="cv-list-heading--tertiary">
+            {{ .startDate }}
+            -
+            {{ .endDate }}
+          </h4>
+          <p class="cv-list-description">
+            {{ .summary }}
+          </p>
+        </li>
       {{ end }}
     </ul>
     <h3 class="cv-heading--light cv-heading--large">
@@ -69,19 +69,19 @@
     </h3>
     <ul class="cv-list">
       {{ range $cv.skills }}
-      <li>
-        <h4 class="cv-list-heading--primary">
-          {{ .name }}
-        </h4>
-        <div class="cv-list-description">
-          {{ .description }}
-        </div>
-        <!-- <ul>
-          {{ range .keywords }}
-          <li>{{ . }}</li>
-          {{ end }}
-        </ul>
-      </li> -->
+        <li>
+          <h4 class="cv-list-heading--primary">
+            {{ .name }}
+          </h4>
+          <p class="cv-list-description">
+            {{ .description }}
+          </p>
+          <ul>
+            {{ range .keywords }}
+              <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </li>
       {{ end }}
     </ul>
 </div>

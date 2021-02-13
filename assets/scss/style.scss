@@ -317,5 +317,9 @@ p {
     &-heading--tertiary {
       color: $color-55-black;
     }
+
+    &-description {
+      margin: 0;
+    }
   }
 }
