@@ -2,8 +2,14 @@
 
 <div class="flex col centered">
   <div class="content-container">
-    <div class="single-title">{{ .Title }}</div>
-    <time class="single-time">{{ .Date.Format "02 January, 2006" }}</time>
+    {{ if eq $.Section "notes" }}
+      <div class="single-container">
+        <h1 class="single-title">{{ .Title }}</h1>
+        <time class="single-time">{{ .Date.Format "02 January, 2006" }}</time>
+      </div>
+    {{ else }}
+      <div class="single-title">{{ .Title }}</div>
+    {{ end }}
     {{ .Content }}
   </div>
   {{ partial "contacts.html" . }}

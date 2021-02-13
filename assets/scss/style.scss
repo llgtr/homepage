@@ -238,6 +238,10 @@ p {
   max-width: $desktop-content-width;
   margin: 0 10%;
 
+  & > .posts {
+    padding: 0;
+  }
+
   @include mobile {
     max-width: $mobile-content-width;
   }
@@ -250,6 +254,10 @@ p {
 .emphasis-text {
   font-size: 80px;
   color: $color-main;
+}
+
+.single-container {
+  padding-bottom: 50px;
 }
 
 .single-title {
@@ -265,10 +273,14 @@ p {
 /* List */
 .list-title {
   font-size: 26px;
+  margin: 0;
+  text-align: center;
 }
 
 .minutes {
   color: $color-55-black;
+  margin: 0;
+  text-align: center;
 }
 
 .post-entry {
