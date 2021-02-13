@@ -20,7 +20,11 @@ body {
 }
 
 main {
-  padding-bottom: $footer-height;
+  padding-bottom: $footer-height + 20px;
+
+  @include mobile {
+    padding-bottom: $footer-height;
+  }
 }
 
 h1, h2, h3, h4 {
