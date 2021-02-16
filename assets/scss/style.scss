@@ -245,6 +245,11 @@ p {
   @include mobile {
     max-width: $mobile-content-width;
   }
+
+  &.justify-center {
+    text-align: justify;
+    text-align-last: center;
+  }
 }
 
 .padded-container {
