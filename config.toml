@@ -18,9 +18,9 @@ ignoreFiles = []
   [[menu.main]]
     name = "about"
     url = "/"
-  [[menu.main]]
-    name = "cv"
-    url = "/cv/"
+  # [[menu.main]]
+  #   name = "cv"
+  #   url = "/cv/"
 
 [params]
   footer = "Thanks for stopping by!"
