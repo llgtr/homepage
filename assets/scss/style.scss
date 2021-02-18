@@ -148,11 +148,6 @@ figure {
   }
 }
 
-/* Content text */
-p {
-  text-align: justify;
-}
-
 /* Header */
 .nav {
   margin: auto;
@@ -246,9 +241,10 @@ p {
     max-width: $mobile-content-width;
   }
 
-  &.justify-center {
-    text-align: justify;
-    text-align-last: center;
+  &.center {
+    & > p {
+      text-align: center;
+    }
   }
 }
 
