@@ -1,6 +1,6 @@
 #+TITLE: Norway 2020
 #+DRAFT: true
-#+AMOUNT: 3
+#+AMOUNT: 2
 #+WEIGHT: 50
 
 {{<img img_01 "alt text">}}
